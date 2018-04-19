@@ -2,11 +2,11 @@ import { Card } from './card.model';
 
 export class Counters {
     card: string;
-    countersTo: {
+    weakAgainst: {
         hard: Card[];
         soft: Card[];
     };
-    countersThese: {
+    strongAgainst: {
         hard: Card[];
         soft: Card[];
     };
