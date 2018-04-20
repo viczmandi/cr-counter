@@ -1,17 +1,17 @@
 import { Card } from './card.model';
 
 export class Counters {
-    card: string;
-    weakAgainst: {
-        hard: Card[];
-        soft: Card[];
+    card: string = '';
+    weakAgainst:any = {
+        'hard': new Array<Card>(),
+        'soft': new Array<Card>()
     };
-    strongAgainst: {
-        hard: Card[];
-        soft: Card[];
+    strongAgainst:any = {
+        'hard': new Array<Card>(),
+        'soft': new Array<Card>()
     };
-    synergies: {
-        hard: Card[];
-        soft: Card[];
-    }
+    synergies:any = {
+        'hard': new Array<Card>(),
+        'soft': new Array<Card>()
+    };
 }

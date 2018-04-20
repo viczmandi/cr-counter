@@ -27,8 +27,5 @@ export class AppComponent {
   addCounter() {
     this.counters.card = this.cardName;
     this.counters[this.counterProp1][this.counterProp2] = this.choosenCards;
-
-    console.log(this.counterProp1);
-    console.log(this.counterProp2);
   }
 }
