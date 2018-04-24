@@ -15,19 +15,22 @@
       >
     </div>
     <div class="col-xs-2">
-      <select name="card" [(ngModel)]="cardName">
+      <select name="card" [(ngModel)]="cardName" (change)="change()">
         <option *ngFor="let card of cards" [value]="card.name">{{ card.name }}</option>
       </select>
       <hr>
-      <select name="counters1" [(ngModel)]="counterProp1">
+      <select name="counters1" [(ngModel)]="counterProp1" (change)="change()">
         <option *ngFor="let c1 of counters1" [value]="c1">{{ c1 }}</option>
       </select>
       <hr>
-      <select name="counters2" [(ngModel)]="counterProp2">
+      <select name="counters2" [(ngModel)]="counterProp2" (change)="change()">
         <option *ngFor="let c2 of counters2" [value]="c2">{{ c2 }}</option>
       </select>
       <hr>
-      <button class="btn btn-primary" type="submit" (click)="addCounter()">Add</button>
+      <button class="btn btn-primary" (click)="addCounter()">Add</button><hr>
+      <button class="btn btn-primary" (click)="copy()">Copy</button><hr>
+      <button class="btn btn-primary" (click)="reset()">Reset</button>
+      
     </div>
     <div class="col-xs-4">
       <pre>{{ counters | json }}</pre>
