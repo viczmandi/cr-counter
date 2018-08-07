@@ -1292,5 +1292,21 @@ export const CARDS: Card[] = [
     arena: 6,
     description: "The Miner can burrow his way underground and appear anywhere in the Arena. It's not magic, it's a shovel.",
     id: 26000032
-    }
+    },
+    {
+        name: "Rascals",
+        level: 8,
+        maxLevel: 13,
+        count: 27,
+        rarity: "Common",
+        requiredForUpgrade: 400,
+        leftToUpgrade: 373,
+        icon: "https://api-assets.clashroyale.com/cards/300/KV48DfwVHKx9XCjzBdk3daT_Eb52Me4VgjVO7WctRc4.png",
+        key: "rascals",
+        elixir: 5,
+        type: "Troop",
+        arena: 9,
+        description: "Spawns a mischievous trio of Rascals! The boy takes the lead, while the girls pelt enemies from behind... with slingshots full of Double Trouble Gum!",
+        id: 26000053
+        }
     ]
