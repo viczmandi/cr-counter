@@ -9,13 +9,11 @@ import { YqlApiService } from '../yql-api.service';
 export class YqlCrawlerComponent implements OnInit {
 
   private url:string = 'https://www.deckshop.pro/card/detail/Skellies';
-  dom:any;
 
   constructor(private yql: YqlApiService) { }
 
   ngOnInit() {
-    this.dom = this.yql.getDOM(this.url)
-    console.log(this.dom);
+    this.yql.getDOM(this.url).subscribe((res) => {console.log(res)});
   }
 
 }
